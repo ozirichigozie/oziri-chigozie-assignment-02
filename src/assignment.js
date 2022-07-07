@@ -14,23 +14,19 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let sumOfNumbers = 0;
+  arrayOfNumbers.forEach(number => {
+    sumOfNumbers += number
+    }
+);
+    return sumOfNumbers;
+    // return arrayOfNumbers.length;
 }
 
-//----------------------------------------
-// MY WORK
-// Let's create a sample array of numbers
-let sampleArray1 = [2, 3, 4, 5, 7, 8, 12, 15]
+let resultOfChallenge1 = sumOfNumbers([1, 2, 3, 4, 10])
+console.log(resultOfChallenge1)
 
-let sumOfArray = 0;
-
-sampleArray1.forEach(number => {
-    sumOfArray += number
-    }
-)
-console.log(sumOfArray)
-
-
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -41,28 +37,22 @@ console.log(sumOfArray)
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let countEvenNumbers = arrayOfNumbers.filter((number) => {
+    if ((number % 2) == 0) {
+      return number
+    }
+});
+    return countEvenNumbers.length
+    // return arrayOfNumbers.length;
 }
 
-//----------------------------------------
-// MY WORK
-// Let's create a sample array of numbers
-let sampleArray2 = [1, 2, 3, 4, 5, 7, 8, 12, 15]
+let result = countEvenNumbers([3, 4, 7, 8, 12, 15, 18]);
 
-// evenNumbersInArray will be the array containing the even numbers in the sample array
-let evenNumbersInArray = sampleArray2.filter((number) => {
-    if ((number % 2) == 0) {
-        return number
-    }
-})
+console.log(result)
 
-const countOfEvenNumbers = evenNumbersInArray.length
-
-console.log(`This is the default array ${sampleArray2}`)
-console.log(`These are the even numbers in the array ${evenNumbersInArray}`)
-console.log(`There are ${countOfEvenNumbers} even numbers in the array`)
-
+// assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -79,9 +69,19 @@ console.log(`There are ${countOfEvenNumbers} even numbers in the array`)
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+  let toFahrenheit = [];
+    arrayOfNumbers.forEach(celsius =>
+    {
+      const fahrenheit = Math.trunc((celsius * 9/5) + 32);
+      toFahrenheit.push(fahrenheit);
+    });
+      return toFahrenheit
+    // return arrayOfNumbers;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+
+let resultInFahrenheit = celsiusToFahrenheit([55, 43])
+console.log(resultInFahrenheit)
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 // ========================
