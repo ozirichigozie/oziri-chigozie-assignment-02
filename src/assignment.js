@@ -30,7 +30,25 @@ function sumOfNumbers(arrayOfNumbers) {
 function countEvenNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+//----------------------------------------
+// MY WORK
+// Let's create a sample array of numbers
+let sampleArray = [1, 2, 3, 4, 5, 7, 8, 12, 15]
+
+// evenNumbersInArray will be the array containing the even numbers in the sample array
+let evenNumbersInArray = sampleArray.filter((number) => {
+    if ((number % 2) == 0) {
+        return number
+    }
+})
+
+const countOfEvenNumbers = evenNumbersInArray.length
+
+console.log(`This is the default array ${sampleArray}`)
+console.log(`These are the even numbers in the array ${evenNumbersInArray}`)
+console.log(`There are ${countOfEvenNumbers} even numbers in the array`)
+
 
 /**
  * Challenge - 3
