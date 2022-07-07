@@ -16,7 +16,21 @@ const assignment = {};
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+//----------------------------------------
+// MY WORK
+// Let's create a sample array of numbers
+let sampleArray = [2, 3, 4, 5, 7, 8, 12, 15]
+
+let sumOfArray = 0;
+
+sampleArray.forEach(number => {
+    sumOfArray += number
+    }
+)
+console.log(sumOfArray)
+
+
 
 /**
  * Challenge - 2
