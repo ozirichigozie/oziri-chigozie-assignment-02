@@ -20,11 +20,11 @@ function sumOfNumbers(arrayOfNumbers) {
 //----------------------------------------
 // MY WORK
 // Let's create a sample array of numbers
-let sampleArray = [2, 3, 4, 5, 7, 8, 12, 15]
+let sampleArray1 = [2, 3, 4, 5, 7, 8, 12, 15]
 
 let sumOfArray = 0;
 
-sampleArray.forEach(number => {
+sampleArray1.forEach(number => {
     sumOfArray += number
     }
 )
@@ -48,10 +48,10 @@ function countEvenNumbers(arrayOfNumbers) {
 //----------------------------------------
 // MY WORK
 // Let's create a sample array of numbers
-let sampleArray = [1, 2, 3, 4, 5, 7, 8, 12, 15]
+let sampleArray2 = [1, 2, 3, 4, 5, 7, 8, 12, 15]
 
 // evenNumbersInArray will be the array containing the even numbers in the sample array
-let evenNumbersInArray = sampleArray.filter((number) => {
+let evenNumbersInArray = sampleArray2.filter((number) => {
     if ((number % 2) == 0) {
         return number
     }
@@ -59,7 +59,7 @@ let evenNumbersInArray = sampleArray.filter((number) => {
 
 const countOfEvenNumbers = evenNumbersInArray.length
 
-console.log(`This is the default array ${sampleArray}`)
+console.log(`This is the default array ${sampleArray2}`)
 console.log(`These are the even numbers in the array ${evenNumbersInArray}`)
 console.log(`There are ${countOfEvenNumbers} even numbers in the array`)
 
